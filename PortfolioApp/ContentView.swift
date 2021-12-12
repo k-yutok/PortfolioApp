@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var str:String = ""
     var body: some View {
         VStack {
             Text("Hello, world!")
                 .padding()
+            TextField("textfiled",text: $str)
         }
         
     }
